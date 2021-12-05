@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP:Authorization} !/read_protected\.php/create\.php/update\.php/delete\.php
+RewriteRule .* - [env=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
