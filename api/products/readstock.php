@@ -61,6 +61,6 @@ else{
  
     // tell the user no products found
     echo json_encode(
-        array("message" => "No productss found.")
+        array("message" => "No products found.")
     );
 }

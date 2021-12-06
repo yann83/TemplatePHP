@@ -1,6 +1,6 @@
 <?php
 /*
-GET http://localhost/php/TemplatePhp/api/products/read_paging.php?
+GET http://localhost/php/TemplatePhp/api/products/read_paging.php
 */
 // required headers
 header("Access-Control-Allow-Origin: *");
@@ -75,7 +75,7 @@ else{
  
     // tell the user productss does not exist
     echo json_encode(
-        array("message" => "No productss found.")
+        array("message" => "No products found.")
     );
 }
 ?>

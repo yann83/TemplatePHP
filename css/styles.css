@@ -73,3 +73,6 @@
     white-space: nowrap;
     word-wrap: break-word;
 }
+.myDIV {
+  display: none;
+}

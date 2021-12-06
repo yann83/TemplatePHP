@@ -38,7 +38,7 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
                                 <li>
-                                    <?php echo '<a class="dropdown-item" href="#">Lien1</a>';?>
+                                    <?php echo '<a class="dropdown-item" href="'.$MainUrl.'vues/apidoc/products.php">Products</a>';?>
                                 </li>
                                 <li>
                                     <?php echo '<a class="dropdown-item" href="#">Lien2</a>';?>
