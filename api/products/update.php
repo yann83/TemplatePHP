@@ -24,7 +24,7 @@ include_once '../objects/products.php';
 require __DIR__ .'/../vendor\autoload.php';
 use \Firebase\JWT\JWT;
 
-$secret_key="sasi831!";
+$secret_key="secretpassword";
 $jwt=null;
 $granted = false;
 // jwt restricted access +++ end
@@ -91,7 +91,7 @@ if ($granted) {
         http_response_code(200);
     
         // tell the user
-        echo json_encode(array("message" => "products was updated."));
+        echo json_encode(array("message" => "Product was updated."));
     }
     
     // if unable to update the products, tell the user
@@ -101,7 +101,7 @@ if ($granted) {
         http_response_code(503);
     
         // tell the user
-        echo json_encode(array("message" => "Unable to update products."));
+        echo json_encode(array("message" => "Unable to update product."));
     }
 }
 ?>

@@ -62,12 +62,12 @@ if($num > 0){
 
     if(password_verify($password, $password2))
     {
-        $secret_key = "sasi831!";
+        $secret_key = "secretpassword";
         $issuer_claim = "THE_ISSUER"; // this can be the servername
         $audience_claim = "THE_AUDIENCE";
         $issuedat_claim = time(); // issued at
         $notbefore_claim = $issuedat_claim + 10; //not before in seconds
-        $expire_claim = $issuedat_claim + 86400; // expire time in seconds
+        $expire_claim = $issuedat_claim + 86400; // expire time in seconds here 24 h
         $token = array(
             "iss" => $issuer_claim,
             "aud" => $audience_claim,

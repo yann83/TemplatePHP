@@ -234,6 +234,205 @@ echo_header("Api documentation");
                 </div>                
             </div> 
 <!-- ############# Fin Section ############# -->  
+<!-- ############# Section ############# -->        
+<div class="row p-3 mb-2 bg-warning text-dark">
+                Create a product
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-warning text-dark" id="inputGroup-sizing-default">POST</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Default" 
+                    aria-describedby="inputGroup-sizing-default" value="products/create.php" readonly>
+            </div>
+            <div class="row ">
+                <div class="col mb-2 bg-secondary text-white">Details</div>
+                <div class="col mb-2 bg-secondary ">
+	                <button type="button" class="btn btn-warning float-end" onclick="myFunction('5')">View</button><!-- number of this div id -->
+	            </div>
+                <div class="w-100"></div>
+                <div class="col" style="display:none;" id="myDIV5"><!-- div id -->
+                    <ul>
+                        <li><u>URL Params</u></li>
+                        Required : none
+                        <li><u>Header Params</u></li>
+                        Required : bearer token JWT                       
+                    </ul>
+                    <ul>
+                        <li><u>Data Params</u></li>
+                            <pre><code class="text-danger">
+                                    {
+                                        "name" : "tournevis",
+                                        "price" : "23.20",
+                                        "status" : "on sale",
+                                        "location" : "france"
+                                     }
+                            </code></pre>
+                    </ul>
+                    <ul>
+                        <li><u>Success Response:</u></li>
+                        <ul>
+                            <li>Code: <b>201</b></li>
+                            Content: 
+                            <pre><code class="text-danger">
+                                { "product was created."}
+                            </code></pre>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <li><u>Error Response:</u></li>
+                        <ul>
+                            <li>Code: <b>401</b></li>
+                            Content: 
+                            <pre><code class="text-danger">
+                                { "Access denied." }
+                            </code></pre>
+                            OR                           
+                            <li>Code: <b>503</b></li>
+                            Content: 
+                            <pre><code class="text-danger">
+                                { "Unable to create product." }
+                            </code></pre>
+                            OR
+                            <li>Code: <b>400</b></li>
+                            Content: 
+                            <pre><code class="text-danger">
+                                { "Unable to create product. Data is incomplete." }
+                            </code></pre>                           
+                        </ul>
+                </div>                
+            </div> 
+<!-- ############# Fin Section ############# -->
+<!-- ############# Section ############# -->        
+<div class="row p-3 mb-2 bg-warning text-dark">
+                Update a product
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-warning text-dark" id="inputGroup-sizing-default">POST</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Default" 
+                    aria-describedby="inputGroup-sizing-default" value="products/update.php" readonly>
+            </div>
+            <div class="row ">
+                <div class="col mb-2 bg-secondary text-white">Details</div>
+                <div class="col mb-2 bg-secondary ">
+	                <button type="button" class="btn btn-warning float-end" onclick="myFunction('6')">View</button><!-- number of this div id -->
+	            </div>
+                <div class="w-100"></div>
+                <div class="col" style="display:none;" id="myDIV6"><!-- div id -->
+                    <ul>
+                        <li><u>URL Params</u></li>
+                        Required : none
+                        <li><u>Header Params</u></li>
+                        Required : bearer token JWT                       
+                    </ul>
+                    <ul>
+                        <li><u>Data Params</u></li>
+                            <pre><code class="text-danger">
+                                    {
+                                        "id": "4",
+                                        "name": "tournevis",
+                                        "price": "15.30",
+                                        "status": "on sale",  
+                                        "location": "China"
+                                    }
+                            </code></pre>
+                    </ul>
+                    <ul>
+                        <li><u>Success Response:</u></li>
+                        <ul>
+                            <li>Code: <b>200</b></li>
+                            Content: 
+                            <pre><code class="text-danger">
+                                { "Product was updated."}
+                            </code></pre>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <li><u>Error Response:</u></li>
+                        <ul>
+                            <li>Code: <b>401</b></li>
+                            Content: 
+                            <pre><code class="text-danger">
+                                { "Access denied." }
+                            </code></pre>
+                            OR                           
+                            <li>Code: <b>503</b></li>
+                            Content: 
+                            <pre><code class="text-danger">
+                                { "Unable to update product." }
+                            </code></pre>                           
+                        </ul>
+                </div>                
+            </div> 
+<!-- ############# Fin Section ############# -->
+<!-- ############# Section ############# -->        
+<div class="row p-3 mb-2 bg-danger text-white">
+                Delete a product
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-danger text-white" id="inputGroup-sizing-default">POST</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Default" 
+                    aria-describedby="inputGroup-sizing-default" value="products/delete.php" readonly>
+            </div>
+            <div class="row ">
+                <div class="col mb-2 bg-secondary text-white">Details</div>
+                <div class="col mb-2 bg-secondary ">
+	                <button type="button" class="btn btn-danger float-end" onclick="myFunction('7')">View</button><!-- number of this div id -->
+	            </div>
+                <div class="w-100"></div>
+                <div class="col" style="display:none;" id="myDIV7"><!-- div id -->
+                    <ul>
+                        <li><u>URL Params</u></li>
+                        Required : none
+                        <li><u>Header Params</u></li>
+                        Required : bearer token JWT                       
+                    </ul>
+                    <ul>
+                        <li><u>Data Params</u></li>
+                            <pre><code class="text-danger">
+                                 {
+                                    "id": "4"
+                                }
+                            </code></pre>
+                    </ul>
+                    <ul>
+                        <li><u>Success Response:</u></li>
+                        <ul>
+                            <li>Code: <b>200</b></li>
+                            Content: 
+                            <pre><code class="text-danger">
+                                { "product was deleted."}
+                            </code></pre>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <li><u>Error Response:</u></li>
+                        <ul>
+                        <li>Code: <b>401</b></li>
+                            Content: 
+                            <pre><code class="text-danger">
+                                { "Access denied." }
+                            </code></pre>
+                            OR                           
+                            <li>Code: <b>503</b></li>
+                            Content: 
+                            <pre><code class="text-danger">
+                                { "Unable to delete product." }
+                            </code></pre>
+                            OR
+                            <li>Code: <b>400</b></li>
+                            Content: 
+                            <pre><code class="text-danger">
+                                { "product not found." }
+                            </code></pre>                           
+                        </ul>
+                </div>                
+            </div> 
+<!-- ############# Fin Section ############# -->
         </div>
     </div>
 </div>

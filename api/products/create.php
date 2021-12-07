@@ -26,7 +26,7 @@ include_once '../objects/products.php';
 require __DIR__ .'/../vendor\autoload.php';
 use \Firebase\JWT\JWT;
 
-$secret_key="sasi831!";
+$secret_key="secretpassword";
 $jwt=null;
 $granted = false;
 // jwt restricted access +++ end
@@ -96,7 +96,7 @@ if ($granted) {
             http_response_code(201);
     
             // tell the user
-            echo json_encode(array("message" => "products was created."));
+            echo json_encode(array("message" => "product was created."));
         }
     
         // if unable to create the products, tell the user
@@ -117,7 +117,7 @@ if ($granted) {
         http_response_code(400);
     
         // tell the user
-        echo json_encode(array("message" => "Unable to create products. Data is incomplete."));
+        echo json_encode(array("message" => "Unable to create product. Data is incomplete."));
     }
 }
 ?>
