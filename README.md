@@ -1,3 +1,7 @@
+A small gesture, a big support! Buy me a coffee ☕ if you appreciate my work. Thanks in advance!
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/yann83)
+
 # TemplatePHP
 I would like to thanks [niltonpaes](https://github.com/niltonpaes/php_template_crud_api/) and [purotu](https://github.com/datamonnit/simple-crud-example/) for sharing linked code, it was a great inspiration for me.
 
